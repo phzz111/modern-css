@@ -1,2 +1,7 @@
 # modern-css
-Exercises based on modern css
+
+
+## BEM命名规范
+> \- 中横线用于连词符  
+> \__ 双下划线连接块与其子元素  
+> \_ 单下划线用于描述元素状态

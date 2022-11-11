@@ -1,0 +1,55 @@
+/* 
+    #336699
+    #6699CC
+    #99CCFF
+*/
+
+body {
+	padding: 30px;
+}
+
+.header {
+	/* linear-gradient 为背景图片提供线性颜色渐变层，
+        to right bottom 预示着从左上角至右下角的颜色渐变
+    */
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(153, 204, 255, 0.8),
+			rgba(51, 102, 153, 1)
+		),
+		url('../public/imgs/wallpaper.jpg');
+	/* 背景图片的初始位置 */
+	background-position: bottom;
+	/* 保持长宽比，以图片的宽或高覆盖容器，可能被剪裁 */
+	background-size: cover;
+	height: 95vh;
+	position: relative;
+	/*  通过剪裁绘制可见区域
+        clip-path: polygon(x y, x y);
+     */
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.title-box {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+}
+/* 这个类作用于h1上，为了更好的语义和SEO */
+.heading-primary {
+	color: #fff;
+	font-size: 40px;
+	/* 通过该行代码实现英文大写 */
+	text-transform: uppercase;
+    /* 实现文字间空隙 */
+	letter-spacing: 13px;
+}
+.heading-primary__main {
+	display: block;
+}
+
+.heading-primary__sub {
+    letter-spacing: 28px;
+	display: block;
+}
