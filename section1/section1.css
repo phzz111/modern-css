@@ -42,14 +42,27 @@ body {
 	font-size: 40px;
 	/* 通过该行代码实现英文大写 */
 	text-transform: uppercase;
-    /* 实现文字间空隙 */
+	/* 实现文字间空隙 */
 	letter-spacing: 13px;
 }
 .heading-primary__main {
 	display: block;
+	animation: heading-text-fade-in 1s;
 }
 
 .heading-primary__sub {
-    letter-spacing: 28px;
+	letter-spacing: 28px;
 	display: block;
+}
+
+@keyframes heading-text-fade-in {
+	0% {
+		transform: translate(-20px);
+	}
+	80% {
+		transform: translate(20px);
+	}
+	100% {
+		transform: translate(0);
+	}
 }
