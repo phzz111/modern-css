@@ -35,6 +35,7 @@ body {
 	left: 50%;
 	top: 40%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 /* 这个类作用于h1上，为了更好的语义和SEO */
 .heading-primary {
@@ -66,3 +67,58 @@ body {
 		transform: translate(0);
 	}
 }
+
+@keyframes heading-btn-fade-in {
+	0% {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.btn {
+	text-decoration: none;
+	display: inline-block;
+	width: 300px;
+	height: 80px;
+	background-color: #fff;
+	color: #777;
+	line-height: 80px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	border-radius: 40px;
+	transition: all 0.2s linear;
+	animation: heading-btn-fade-in .5s ease 1.3s backwards;
+	position:relative
+}
+
+.btn:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	left: 0;
+	top: 0;
+	border-radius: 40px;
+	background-color: #fff;
+	z-index: -1;
+	transition: all .4s;
+}
+
+.btn:active {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after{
+	transform: scale(2);
+	opacity: 0;
+}
+
