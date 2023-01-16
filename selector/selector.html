@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>css选择器</title>
+		<style>
+			:has([title^="1"]) {
+				color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<span>aaa</span>
+			<span>bbb</span>
+			<div>
+				<span>孙子辈的节点</span>
+				<code>i'm code</code>
+				<div>
+					<span title="重孙子辈">重孙子辈</span>
+				</div>
+				<span>孙子辈的节点2</span>
+			</div>
+			<span>ccc</span>
+			<span>
+				ddd
+				<h1>eee</h1>
+			</span>
+		</div>
+		<div class="parent-1">
+			<span>1aaa</span>
+			<span title="1bbb b">1bbb</span>
+			<span>1ccc</span>
+		</div>
+		<ul class="my-ul">
+			<li>li1</li>
+			<li>li2</li>
+			<li>li3</li>
+			<li>li4</li>
+			<li>li5</li>
+		</ul>
+	</body>
+</html>
