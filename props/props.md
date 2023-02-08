@@ -44,10 +44,29 @@ animation-name 指定关键帧动画的名称
 
 函数定义了一个元素在二维平面上的倾斜转换,结果用于 transform
 
+## resize
+
+允许用户通过拖拽方式调整元素宽高，属性值有 vertical/horizontal/both，分别代表了纵向/横向/全部
+通常需要overflow:auto 使含有内部元素的容器生效
+设置为 none 可以让 textarea 等可缩放元素禁止缩放
+
+## aspect-radio
+让盒子保持一个横纵比，值为 h / v 的格式，可以让元素保持更好的自适应性
+
+## pointer-events
+在目标为非svg元素时有两个属性 none/auto
+auto为未指定样式时的默认行为
+none为目标不触发事件，其后代元素会触发事件
+
+## display:flow-root
+创建一个块级上下文，是最只管的创建bfc的方式
+
 ## outline
-类似Border，但不占据空间，且通常为矩形
-outline 可以配合 outline-offset设置边框与元素之间的间隙
+
+类似 Border，但不占据空间，且通常为矩形
+outline 可以配合 outline-offset 设置边框与元素之间的间隙
 
 ## backgound-clip
+
 背景显示范围  
 值可以是 border-box/padding-box/content-box/text
