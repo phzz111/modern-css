@@ -1,0 +1,25 @@
+/* 
+ 方案1： 基于border
+*/
+
+.triangle {
+	width: 0px;
+	height: 0px;
+	border-top: 150px pink solid;
+	border-bottom: 0px;
+	border-left: 150px gold solid;
+	border-right: 150px skyblue solid;
+    /* 当其中某一条边宽度为0则三角形也会不同 */
+	/* border: 150px solid; */
+	/* border-color: transparent transparent gold transparent; */
+}
+
+/* 
+方案2： 基于clip-path
+*/
+.triangle1 {
+	background-color: gold;
+	width: 150px;
+	height: 150px;
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
