@@ -1,0 +1,15 @@
+.wrapper {
+	background-color: gray;
+}
+
+.left {
+	background-color: blue;
+	width: 300px;
+	float: left;
+}
+
+.right {
+	background-color: red;
+    width: calc(100% - 300px);
+    float: left;
+}

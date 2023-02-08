@@ -1,0 +1,21 @@
+.wrap {
+	background-color: gray;
+}
+
+.left {
+	background-color: red;
+	width: 300px;
+	float: left;
+}
+
+.right {
+	background-color: blue;
+	float: left;
+	width: 300px;
+}
+
+.mid {
+	background-color: yellow;
+	float: left;
+	width: calc(100% - 600px);
+}

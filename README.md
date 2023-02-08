@@ -4,6 +4,8 @@
 ```js
 .
 ├─layout //布局
+├──2col //两列布局，左侧定宽，右侧自适应
+├──3col //三列布局，中间自适应，两侧定宽
 ├─props  //一些好用的css属性
 ├─responsive //响应式设计
 ├─scss //scss特性
